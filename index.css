@@ -1,0 +1,80 @@
+body[data-theme="t-dark"]{
+  --text-color: white;
+  --background-color: #252524;
+}
+body[data-theme="t-light"]{
+  --text-color: #252524;
+  --background-color: #FFFCA5;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+button{
+  background-color: var(--background-color);
+  border: none;
+ 
+}
+.darkMode{
+  width: 40px;
+  height: auto;
+}
+nav{
+  display: flex;
+  height: 40px;
+  padding-bottom: 10px;
+}
+
+/* para telas pequenas */
+@media only screen and (max-width: 600px){
+  .geral{
+    background: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+  }
+  .substance{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    
+  }
+  
+  .icon{
+    border-radius: 50px;
+    height: 100px;
+    width: auto;
+  }
+  div{
+    padding: 5px;
+  }
+}
+/* para telas grandes */
+@media only screen and (min-width: 600px){
+
+  .geral{
+    background: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+  }
+  .substance{
+    display: flex;
+    justify-content: center;
+    padding: 40px; 
+  }
+  .icon{
+    border-radius: 10px;
+    height: 100px;
+    width: auto;
+  }
+
+  .username{
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+}
+
+
